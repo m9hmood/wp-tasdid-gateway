@@ -1,0 +1,124 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2023-06-21 04:18+0300\n"
+"PO-Revision-Date: 2023-06-21 04:18+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/class-tasdid-gateway-woocommerce.php:65
+msgid "Tasdid Gateway"
+msgstr ""
+
+#: includes/class-tasdid-gateway-woocommerce.php:66
+msgid "Have your customers pay with Tasdid."
+msgstr ""
+
+#: includes/class-tasdid-gateway-woocommerce.php:113
+msgid "Enable"
+msgstr ""
+
+#: includes/class-tasdid-gateway-woocommerce.php:114
+msgid "Enable TASDID Gateway"
+msgstr ""
+
+#: includes/class-tasdid-gateway-woocommerce.php:119
+msgid "Title"
+msgstr ""
+
+#: includes/class-tasdid-gateway-woocommerce.php:120
+msgid "Payment Option Title"
+msgstr ""
+
+#: includes/class-tasdid-gateway-woocommerce.php:125
+msgid "Description"
+msgstr ""
+
+#: includes/class-tasdid-gateway-woocommerce.php:127
+msgid "This description is what user see when choose TASDID gateway"
+msgstr ""
+
+#: includes/class-tasdid-gateway-woocommerce.php:128
+msgid "Pay via TASDID"
+msgstr ""
+
+#: includes/class-tasdid-gateway-woocommerce.php:131
+msgid "Username"
+msgstr ""
+
+#: includes/class-tasdid-gateway-woocommerce.php:135
+msgid "Password"
+msgstr ""
+
+#: includes/class-tasdid-gateway-woocommerce.php:139
+msgid "Service ID"
+msgstr ""
+
+#: includes/class-tasdid-gateway-woocommerce.php:143
+msgid "Test Mode"
+msgstr ""
+
+#: includes/class-tasdid-gateway-woocommerce.php:144
+msgid "Enable Test Mode"
+msgstr ""
+
+#: includes/class-tasdid-gateway-woocommerce.php:159
+msgid "Dear Mr/Mrs."
+msgstr ""
+
+#: includes/class-tasdid-gateway-woocommerce.php:160
+msgid ""
+"An invoice has been created for your order, please pay the bill through "
+"tasdid platform"
+msgstr ""
+
+#: includes/class-tasdid-gateway-woocommerce.php:161
+msgid "Pay Bill"
+msgstr ""
+
+#: includes/class-tasdid-gateway-woocommerce.php:180
+msgid "Error: Invalid phone number"
+msgstr ""
+
+#: includes/class-tasdid-gateway-woocommerce.php:198
+msgid "Awaiting bill payment"
+msgstr ""
+
+#: includes/class-tasdid-gateway-woocommerce.php:209
+msgid "Something Wrong, Please try again later."
+msgstr ""
+
+#: includes/libraries/plugin-update-checker-4.9/Puc/v4p9/Plugin/Ui.php:54
+msgid "View details"
+msgstr ""
+
+#: includes/libraries/plugin-update-checker-4.9/Puc/v4p9/Plugin/Ui.php:77
+#, php-format
+msgid "More information about %s"
+msgstr ""
+
+#: includes/libraries/plugin-update-checker-4.9/Puc/v4p9/Plugin/Ui.php:128
+msgid "Check for updates"
+msgstr ""
+
+#: includes/libraries/plugin-update-checker-4.9/Puc/v4p9/Plugin/Ui.php:223
+#, php-format
+msgid "Unknown update checker status \"%s\""
+msgstr ""
+
+#: includes/libraries/plugin-update-checker-4.9/Puc/v4p9/Vcs/PluginUpdateChecker.php:98
+msgid "There is no changelog available."
+msgstr ""
+
+#: tasdid-gateway.php:112
+msgid "Sorry, you need to install Woocommerce plugin to use TASDID Gateway"
+msgstr ""
