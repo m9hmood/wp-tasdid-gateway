@@ -88,12 +88,12 @@ class Tasdid_Gateway_WC extends WC_Payment_Gateway
             $this->enabled = "no";
             $this->update_option('enabled', 'no');
         } else if (empty($this->token)) {
-            $token = Tasdid_Gateway_Helper::login($this->username, $this->password, $this->isTest);
+            $token = Tasdid_Gateway_Helper::login($this->username, $this->password);
             if (empty($token)) return;
             $this->update_option("token", $token);
             $this->token = $token;
         } else if (!Tasdid_Gateway_Helper::is_token_expired($this->token)) {
-            $token = Tasdid_Gateway_Helper::login($this->username, $this->password, $this->isTest);
+            $token = Tasdid_Gateway_Helper::login($this->username, $this->password);
             if (empty($token)) return;
             $this->update_option("token", $token);
             $this->token = $token;
