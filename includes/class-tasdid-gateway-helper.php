@@ -45,9 +45,9 @@ class Tasdid_Gateway_Helper
      * @return array
      * @since 1.0.0
      */
-    static function login(string $username, string $password)
+    static function login(string $username, string $password, $test_mode)
     {
-        $base_url = $payment_gateway->settings->is_test === "yes" ? TESTING_TASDID_API_DOMAIN : TASDID_API_DOMAIN;
+        $base_url = $test_mode ? TESTING_TASDID_API_DOMAIN : TASDID_API_DOMAIN;
         $url = $base_url . '/auth/token';
         $data = array(
             'username' => $username,

@@ -87,18 +87,11 @@ class Tasdid_Gateway_WC extends WC_Payment_Gateway
         if (empty($this->username) || empty($this->password)) {
             $this->enabled = "no";
             $this->update_option('enabled', 'no');
-        } else if (empty($this->token)) {
-            $token = Tasdid_Gateway_Helper::login($this->username, $this->password);
-            if (empty($token)) return;
-            $this->update_option("token", $token);
-            $this->token = $token;
-        } else if (!Tasdid_Gateway_Helper::is_token_expired($this->token)) {
-            $token = Tasdid_Gateway_Helper::login($this->username, $this->password);
-            if (empty($token)) return;
-            $this->update_option("token", $token);
-            $this->token = $token;
+            // show admin notice
+            add_action('admin_notices', function () {
+                echo '<div class="notice notice-error is-dismissible"><p>' . __('Please enter your Tasdid account username and password to enable Tasdid gateway.', 'tasdid-gateway') . '</p></div>';
+            });
         }
-
     }
 
     /**
@@ -238,9 +231,8 @@ class Tasdid_Gateway_WC extends WC_Payment_Gateway
     private function create_payment(WC_Order $order)
     {
         $dueDate = date('Y-m-d', mktime(0, 0, 0, date('m'), date('d') + 5, date('Y')));
-
-        $base_url = $this->isTest ? TESTING_TASDID_API_DOMAIN : TASDID_API_DOMAIN;
-
+        $base_url = $this->isTest  ? TESTING_TASDID_API_DOMAIN : TASDID_API_DOMAIN;
+        $token = Tasdid_Gateway_Helper::login($this->username, $this->password, $this->isTest);
         $args = array(
             'payId' => sprintf("%'.05d", $order->get_order_number()),
             'customerName' => $order->get_formatted_billing_full_name(),
@@ -252,7 +244,7 @@ class Tasdid_Gateway_WC extends WC_Payment_Gateway
         );
         // add Authorization to request header
         $headers = array(
-            'Authorization' => 'Bearer ' . $this->token,
+            'Authorization' => 'Bearer ' . $token,
         );
 
         return Tasdid_Gateway_Helper::request($base_url . '/Provider/AddBill', 'PUT', $args, $headers);
