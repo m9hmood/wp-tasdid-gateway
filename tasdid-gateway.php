@@ -14,11 +14,11 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Tasdid Gateway: UnOfficial Gateway Integration
- * Plugin URI:        https://tasdid.mahmoodshaki.com/
+ * Plugin URI:        https://mahmoodshakir.com/
  * Description:       Add Tasdid as payment method for Wordpress easily.
  * Version:           1.3.2
  * Author:            Mahmood A.Shakir
- * Author URI:        https://mahmoodshaki.com/
+ * Author URI:        https://mahmoodshakir.com/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       tasdid-gateway
