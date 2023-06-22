@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2023-06-21 04:18+0300\n"
-"PO-Revision-Date: 2023-06-21 04:18+0300\n"
+"POT-Creation-Date: 2023-06-22 12:52+0300\n"
+"PO-Revision-Date: 2023-06-22 12:54+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ar\n"
@@ -24,59 +24,67 @@ msgstr "منصة تسديد"
 msgid "Have your customers pay with Tasdid."
 msgstr "اضف إمكانية الدفع لعملائك من خلال منصة تسديد."
 
-#: includes/class-tasdid-gateway-woocommerce.php:113
+#: includes/class-tasdid-gateway-woocommerce.php:92
+msgid ""
+"Please enter your Tasdid account username and password to enable Tasdid "
+"gateway."
+msgstr ""
+"يرجى ادخال اسم المستخدم و كلمة المرور الخاصة بمنصة تسديد من اجل تفعيل بوابة "
+"الدفع."
+
+#: includes/class-tasdid-gateway-woocommerce.php:106
 msgid "Enable"
 msgstr "تفعيل"
 
-#: includes/class-tasdid-gateway-woocommerce.php:114
+#: includes/class-tasdid-gateway-woocommerce.php:107
 msgid "Enable TASDID Gateway"
 msgstr "تفعيل الدفع من خلال منصة تسديد"
 
-#: includes/class-tasdid-gateway-woocommerce.php:119
+#: includes/class-tasdid-gateway-woocommerce.php:112
 msgid "Title"
 msgstr "العنوان"
 
-#: includes/class-tasdid-gateway-woocommerce.php:120
+#: includes/class-tasdid-gateway-woocommerce.php:113
 msgid "Payment Option Title"
 msgstr "اسم بوابة الدفع"
 
-#: includes/class-tasdid-gateway-woocommerce.php:125
+#: includes/class-tasdid-gateway-woocommerce.php:118
 msgid "Description"
 msgstr "الوصف"
 
-#: includes/class-tasdid-gateway-woocommerce.php:127
+#: includes/class-tasdid-gateway-woocommerce.php:120
 msgid "This description is what user see when choose TASDID gateway"
 msgstr "هذا الوصف يظهر للمستخدم عند تحديد منصة تسديد لدفع الطلب"
 
-#: includes/class-tasdid-gateway-woocommerce.php:128
+#: includes/class-tasdid-gateway-woocommerce.php:121
 msgid "Pay via TASDID"
 msgstr "الدفع من خلال منصة تسديد"
 
-#: includes/class-tasdid-gateway-woocommerce.php:131
+#: includes/class-tasdid-gateway-woocommerce.php:124
 msgid "Username"
 msgstr "اسم المستخدم"
 
-#: includes/class-tasdid-gateway-woocommerce.php:135
+#: includes/class-tasdid-gateway-woocommerce.php:128
 msgid "Password"
 msgstr "كلمة المرور"
 
-#: includes/class-tasdid-gateway-woocommerce.php:139
+#: includes/class-tasdid-gateway-woocommerce.php:132
 msgid "Service ID"
 msgstr ""
 
-#: includes/class-tasdid-gateway-woocommerce.php:143
+#: includes/class-tasdid-gateway-woocommerce.php:136
 msgid "Test Mode"
 msgstr "الوضع التجريبي"
 
-#: includes/class-tasdid-gateway-woocommerce.php:144
+#: includes/class-tasdid-gateway-woocommerce.php:137
 msgid "Enable Test Mode"
 msgstr "تفعيل الوضع التجريبي من اجل اختبار الربط مع منصة تسديد"
 
-#: includes/class-tasdid-gateway-woocommerce.php:159
+#: includes/class-tasdid-gateway-woocommerce.php:152
 msgid "Dear Mr/Mrs."
 msgstr "عزيزي السيد\\السيدة."
 
-#: includes/class-tasdid-gateway-woocommerce.php:160
+#: includes/class-tasdid-gateway-woocommerce.php:153
 msgid ""
 "An invoice has been created for your order, please pay the bill through "
 "tasdid platform"
@@ -84,19 +92,23 @@ msgstr ""
 "تم انشاء فاتورة خاصة بطلبك, يرجى تسديد الفاتورة من خلال تطبيق خدمات كي كارد "
 "او من خلال منصة تسديد"
 
-#: includes/class-tasdid-gateway-woocommerce.php:161
+#: includes/class-tasdid-gateway-woocommerce.php:154
 msgid "Pay Bill"
 msgstr "دفع الفاتورة"
 
-#: includes/class-tasdid-gateway-woocommerce.php:180
-msgid "Error: Invalid phone number"
-msgstr "خطا: رقم الهاتف غير صحيح"
+#: includes/class-tasdid-gateway-woocommerce.php:191
+msgid ""
+"Error: Invalid phone number, phone number should starts with 078 or 0770 or "
+"075"
+msgstr ""
+"رقم الهاتف خطأ، يرجى ادخال رقم هاتف صالح يبدء بـ 077 او 078 او 075 و متكون "
+"من 11 رقم فقط"
 
-#: includes/class-tasdid-gateway-woocommerce.php:198
+#: includes/class-tasdid-gateway-woocommerce.php:209
 msgid "Awaiting bill payment"
 msgstr "في انتظار دفع الفاتورة"
 
-#: includes/class-tasdid-gateway-woocommerce.php:209
+#: includes/class-tasdid-gateway-woocommerce.php:220
 msgid "Something Wrong, Please try again later."
 msgstr "حدث خطأ, حاول مجدداً في وقت لاحق."
 
@@ -127,6 +139,9 @@ msgid "Sorry, you need to install Woocommerce plugin to use TASDID Gateway"
 msgstr ""
 "عذراً، يجب عليك تنصيب اضافة  WooCommerce من اجل استخدام بوابة الدفع الخاصة "
 "بمنصة تسديد"
+
+#~ msgid "Error: Invalid phone number"
+#~ msgstr "خطا: رقم الهاتف غير صحيح"
 
 #~ msgid ""
 #~ "FIB Gateway was disabled, You must set Client ID and Secret from  settings"

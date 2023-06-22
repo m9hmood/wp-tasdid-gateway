@@ -157,6 +157,24 @@ class Tasdid_Gateway_WC extends WC_Payment_Gateway
         }
     }
 
+        /**
+     * validate mobile number with specific rules: mobile should contain 07[x] and length should be 11
+     *
+     * @param string $mobileNo
+     * @return bool
+     * @since    1.2.2
+     */
+    private function validate_phone_number(string $mobileNo): bool
+    {
+        if (!preg_match_all('/07[3-9][0-9]/', $mobileNo)) {
+            return false;
+        }
+        if (strlen($mobileNo) !== 11) {
+            return false;
+        }
+        return true;
+    }
+
     /**
      * Handle tasdid payment request
      *
@@ -170,7 +188,7 @@ class Tasdid_Gateway_WC extends WC_Payment_Gateway
         $order = wc_get_order($order_id);
 
         if (!$this->validate_phone_number($order->get_billing_phone())) {
-            wc_add_notice(__('Error: Invalid phone number', 'tasdid-gateway'), 'error');
+            wc_add_notice(__('Error: Invalid phone number, phone number should starts with 078 or 0770 or 075', 'tasdid-gateway'), 'error');
             return;
         }
 
@@ -202,24 +220,6 @@ class Tasdid_Gateway_WC extends WC_Payment_Gateway
                 wc_add_notice(__('Something Wrong, Please try again later.', 'tasdid-gateway') . $statusCode, 'error');
                 break;
         }
-    }
-
-    /**
-     * validate mobile number with specific rules: mobile should contain 07[x] and length should be 11
-     *
-     * @param string $mobileNo
-     * @return bool
-     * @since    1.2.2
-     */
-    private function validate_phone_number(string $mobileNo): bool
-    {
-        if (!preg_match_all('/07[3-9][0-9]/', $mobileNo)) {
-            return false;
-        }
-        if (strlen($mobileNo) !== 11) {
-            return false;
-        }
-        return true;
     }
 
     /**

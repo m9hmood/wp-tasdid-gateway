@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2023-06-21 04:18+0300\n"
-"PO-Revision-Date: 2023-06-21 04:18+0300\n"
+"POT-Creation-Date: 2023-06-22 12:52+0300\n"
+"PO-Revision-Date: 2023-06-22 12:52+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -23,77 +23,85 @@ msgstr ""
 msgid "Have your customers pay with Tasdid."
 msgstr ""
 
-#: includes/class-tasdid-gateway-woocommerce.php:113
+#: includes/class-tasdid-gateway-woocommerce.php:92
+msgid ""
+"Please enter your Tasdid account username and password to enable Tasdid "
+"gateway."
+msgstr ""
+
+#: includes/class-tasdid-gateway-woocommerce.php:106
 msgid "Enable"
 msgstr ""
 
-#: includes/class-tasdid-gateway-woocommerce.php:114
+#: includes/class-tasdid-gateway-woocommerce.php:107
 msgid "Enable TASDID Gateway"
 msgstr ""
 
-#: includes/class-tasdid-gateway-woocommerce.php:119
+#: includes/class-tasdid-gateway-woocommerce.php:112
 msgid "Title"
 msgstr ""
 
-#: includes/class-tasdid-gateway-woocommerce.php:120
+#: includes/class-tasdid-gateway-woocommerce.php:113
 msgid "Payment Option Title"
 msgstr ""
 
-#: includes/class-tasdid-gateway-woocommerce.php:125
+#: includes/class-tasdid-gateway-woocommerce.php:118
 msgid "Description"
 msgstr ""
 
-#: includes/class-tasdid-gateway-woocommerce.php:127
+#: includes/class-tasdid-gateway-woocommerce.php:120
 msgid "This description is what user see when choose TASDID gateway"
 msgstr ""
 
-#: includes/class-tasdid-gateway-woocommerce.php:128
+#: includes/class-tasdid-gateway-woocommerce.php:121
 msgid "Pay via TASDID"
 msgstr ""
 
-#: includes/class-tasdid-gateway-woocommerce.php:131
+#: includes/class-tasdid-gateway-woocommerce.php:124
 msgid "Username"
 msgstr ""
 
-#: includes/class-tasdid-gateway-woocommerce.php:135
+#: includes/class-tasdid-gateway-woocommerce.php:128
 msgid "Password"
 msgstr ""
 
-#: includes/class-tasdid-gateway-woocommerce.php:139
+#: includes/class-tasdid-gateway-woocommerce.php:132
 msgid "Service ID"
 msgstr ""
 
-#: includes/class-tasdid-gateway-woocommerce.php:143
+#: includes/class-tasdid-gateway-woocommerce.php:136
 msgid "Test Mode"
 msgstr ""
 
-#: includes/class-tasdid-gateway-woocommerce.php:144
+#: includes/class-tasdid-gateway-woocommerce.php:137
 msgid "Enable Test Mode"
 msgstr ""
 
-#: includes/class-tasdid-gateway-woocommerce.php:159
+#: includes/class-tasdid-gateway-woocommerce.php:152
 msgid "Dear Mr/Mrs."
 msgstr ""
 
-#: includes/class-tasdid-gateway-woocommerce.php:160
+#: includes/class-tasdid-gateway-woocommerce.php:153
 msgid ""
 "An invoice has been created for your order, please pay the bill through "
 "tasdid platform"
 msgstr ""
 
-#: includes/class-tasdid-gateway-woocommerce.php:161
+#: includes/class-tasdid-gateway-woocommerce.php:154
 msgid "Pay Bill"
 msgstr ""
 
-#: includes/class-tasdid-gateway-woocommerce.php:180
-msgid "Error: Invalid phone number"
-msgstr ""
-
-#: includes/class-tasdid-gateway-woocommerce.php:198
-msgid "Awaiting bill payment"
+#: includes/class-tasdid-gateway-woocommerce.php:191
+msgid ""
+"Error: Invalid phone number, phone number should starts with 078 or 0770 or "
+"075"
 msgstr ""
 
 #: includes/class-tasdid-gateway-woocommerce.php:209
+msgid "Awaiting bill payment"
+msgstr ""
+
+#: includes/class-tasdid-gateway-woocommerce.php:220
 msgid "Something Wrong, Please try again later."
 msgstr ""
 
